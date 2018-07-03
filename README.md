@@ -15,17 +15,17 @@ Each profile page contains the following information:
 You should have the demo API running and accessible from http://localhost:3000
 
 # Part 1 – Create a demo JSON response:
-You need to create a static JSON response that is returned as the response to the /user endpoint in the demo API.
-The JSON response should contain all information as detailed in the task background. 
-Place the JSON data in the object variable, in the routes/users.js file
+ - You need to create a static JSON response that is returned as the response to the /user endpoint in the demo API.
+ - The JSON response should contain all information as detailed in the task background. 
+ - Place the JSON data in the object variable, in the routes/users.js file
 
 # Part 2 – Create the Profile Page:
-Create a new application using AngularJS or Angular (an Angular 6 application created using the Angular-CLI is preferred).
-Create the application in a new folder within the cloned repo
-The application should contain just the profile page.
-The profile page should display the information received from the request to the http://localhost:3000/user endpoint.
-The profile page should contain all relevant information displayed in a clean, ordered, well designed manner.
-How the page looks is completely up to you.
+ - Create a new application using AngularJS or Angular (an Angular 6 application created using the Angular-CLI is preferred).
+ - Create the application in a new folder within the cloned repo
+ - The application should contain just the profile page.
+ - The profile page should display the information received from the request to the http://localhost:3000/user endpoint.
+ - The profile page should contain all relevant information displayed in a clean, ordered, well designed manner.
+ - How the page looks is completely up to you.
 
 # Tips:
 -	When creating the Angular application, design the code with maintainability, scalability and best practices in mind
