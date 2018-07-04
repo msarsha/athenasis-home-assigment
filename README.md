@@ -30,7 +30,7 @@ You should have the demo API running and accessible from http://localhost:3000
 # Tips:
 -	When creating the Angular application, design the code with maintainability, scalability and best practices in mind
 -	Try to create a visually attractive design, but consider the effect on performance and page load times
--	For the API images, use links to free stock images, eg. https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+-	For images the API should return, use links to free stock images, eg. https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 -	The page should be responsive across various desktop sizes – no need to make it mobile responsive though
 -	Recommended to use Bootstrap 4 and/or material design
 -	Bonus points for writing unit tests
