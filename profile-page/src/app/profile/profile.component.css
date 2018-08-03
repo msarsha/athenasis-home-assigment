@@ -10,6 +10,7 @@
 .profile-card {
   width: 800px;
   padding: 20px;
+  background-color: rgba(212, 245, 255, 0.11);
 }
 
 .profile-card-title {
