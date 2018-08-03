@@ -23,12 +23,15 @@ import {Profile} from './models/profile';
               <mat-divider></mat-divider>
             </mat-card-title>
             <mat-card-content class="profile-card-content">
-              <profile-avatar [profile]="profile" class="profile-avatar"></profile-avatar>
-              <profile-posts [posts]="profile.latest_posts" class="profile-posts"></profile-posts>
+              <div class="profile-card-content__first-section">
+                <profile-avatar [profile]="profile" class="profile-avatar"></profile-avatar>
+                <profile-posts [posts]="profile.latest_posts" class="profile-posts"></profile-posts>
+              </div>
+              <profile-connections [connections]="profile.top_connections"></profile-connections>
             </mat-card-content>
             <mat-card-footer class="profile-card-footer">
               <mat-divider></mat-divider>
-              <span class="profile-card-footer__copy">Athena 2018</span>
+              <span class="profile-card-footer__copy">Athenasis 2018</span>
             </mat-card-footer>
           </mat-card>
         </ng-container>

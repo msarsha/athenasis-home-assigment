@@ -18,7 +18,7 @@ export class ProfileService {
       .http
       .get<Profile>(this.PROFILE_URL)
       .pipe(
-        delay(1000) // simulate remote api
+        delay(1300) // simulate remote api
       );
   }
 }

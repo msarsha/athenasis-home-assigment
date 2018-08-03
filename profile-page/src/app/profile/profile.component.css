@@ -10,7 +10,7 @@
 .profile-card {
   width: 800px;
   padding: 20px;
-  background-color: rgba(212, 245, 255, 0.11);
+  background-color: rgba(212, 245, 255, 0.08);
 }
 
 .profile-card-title {
@@ -20,6 +20,12 @@
 
 .profile-card-content {
   min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-card-content__first-section {
   display: flex;
   justify-content: space-evenly;
 }

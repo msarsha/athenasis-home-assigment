@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Post} from '../models/post';
+import {Post} from '../../models/post';
 
 @Component({
   selector: 'profile-posts',
