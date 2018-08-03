@@ -1,0 +1,8 @@
+.posts-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-expansion-panel-header-description {
+  flex-grow: 0;
+}

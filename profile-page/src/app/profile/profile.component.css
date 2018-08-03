@@ -1,0 +1,45 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+}
+
+.user-profile-container {
+  display: flex;
+}
+
+.profile-card {
+  width: 800px;
+  padding: 20px;
+}
+
+.profile-card-title {
+  font-size: 1.2em;
+  margin-bottom: 50px;
+}
+
+.profile-card-content {
+  min-height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile-card-footer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: .7em;
+}
+
+.profile-card-footer__copy {
+  margin-top: 20px;
+}
+
+.profile-avatar {
+  flex: 1;
+}
+
+.profile-posts {
+  flex: 2;
+}
+
