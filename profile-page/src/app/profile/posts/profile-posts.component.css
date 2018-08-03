@@ -1,8 +1,38 @@
 .posts-container {
   display: flex;
-  flex-direction: column;
+  justify-content: stretch;
+  flex-wrap: wrap;
 }
 
-.mat-expansion-panel-header-description {
-  flex-grow: 0;
+.post {
+  flex-basis: 45%;
+  border: lightgrey 1px solid;
+  border-radius: 5px;
+  padding: 15px;
+  height: 100px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all ease-in-out 150ms;
+}
+
+.post:hover {
+  box-shadow: #46708f 0 0 4px 0;
+  cursor: pointer;
+}
+
+.post-header {
+  display: flex;
+  font-weight: bold;
+}
+
+.post-header__text {
+  font-size: 1.1em;
+  color: #46708f;
+  flex-grow: 1;
+}
+
+.post-header__likes {
+  color: #398f58;
 }

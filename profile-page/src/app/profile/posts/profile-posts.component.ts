@@ -5,22 +5,17 @@ import {Post} from '../models/post';
   selector: 'profile-posts',
   styleUrls: ['./profile-posts.component.css'],
   template: `
+    <h3>Recent Posts:</h3>
     <div class="posts-container">
-      <h4>Recent Posts:</h4>
-      <mat-accordion>
-        <mat-expansion-panel *ngFor="let post of posts">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              {{post.title}}
-            </mat-panel-title>
-            <mat-panel-description>
-              <span>{{post.likes}}</span>
-              <mat-icon>thumb_up</mat-icon>
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <p>{{post.text}}</p>
-        </mat-expansion-panel>
-      </mat-accordion>
+      <div class="post" *ngFor="let post of posts">
+        <div class="post-header">
+          <span class="post-header__text">{{post.title}}</span>
+          <span class="post-header__likes" title="likes">{{post.likes}}</span>
+        </div>
+        <div class="post-content">
+          <span>{{post.text}}</span>
+        </div>
+      </div>
     </div>
   `
 })
