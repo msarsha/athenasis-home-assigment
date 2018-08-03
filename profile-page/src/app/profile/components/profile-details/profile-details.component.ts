@@ -2,16 +2,18 @@ import {Component, Input} from '@angular/core';
 import {Profile} from '../../models/profile';
 
 @Component({
-  selector: 'profile-avatar',
-  styleUrls: ['./profile-avatar.component.css'],
+  selector: 'profile-details',
+  styleUrls: ['./profile-details.component.css'],
   template: `
-    <div class="avatar-container">
+    <div class="details-container">
       <img [src]="profile.image" class="avatar">
       <span class="avatar-name">{{profile.name}}</span>
       <span>{{profile.birth | date}}</span>
+      <a href="mailto:{{profile.contact.email}}">{{profile.contact.email}}</a>
+      <span>{{profile.contact.phone}}</span>
     </div>
   `
 })
-export class ProfileAvatarComponent {
+export class ProfileDetailsComponent {
   @Input() profile: Profile;
 }

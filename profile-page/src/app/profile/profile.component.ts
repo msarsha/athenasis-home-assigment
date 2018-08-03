@@ -24,7 +24,7 @@ import {Profile} from './models/profile';
             </mat-card-title>
             <mat-card-content class="profile-card-content">
               <div class="profile-card-content__first-section">
-                <profile-avatar [profile]="profile" class="profile-avatar"></profile-avatar>
+                <profile-details [profile]="profile" class="profile-avatar"></profile-details>
                 <profile-posts [posts]="profile.latest_posts" class="profile-posts"></profile-posts>
               </div>
               <profile-connections [connections]="profile.top_connections"></profile-connections>
