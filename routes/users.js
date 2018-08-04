@@ -19,6 +19,9 @@ router.get('/', function (req, res, next) {
             {title: 'at the beach', text: 'here is a fish !', likes: 5},
             {title: 'best post EVVA !!', text: 'slept for 5 hours !', likes: 15},
             {title: 'trip to canada', text: 'so cold here', likes: 35},
+            {title: 'at the beach', text: 'here is a fish !', likes: 5},
+            {title: 'best post EVVA !!', text: 'slept for 5 hours !', likes: 15},
+            {title: 'trip to canada', text: 'so cold here', likes: 35},
             {title: 'at the beach', text: 'here is a fish !', likes: 5}
         ],
         top_connections: [

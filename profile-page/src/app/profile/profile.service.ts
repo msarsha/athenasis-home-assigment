@@ -10,7 +10,7 @@ import {MatSnackBar} from '@angular/material';
   providedIn: 'root'
 })
 export class ProfileService {
-  readonly PROFILE_URL = 'http://localhost:3000/users';
+  readonly PROFILE_URL = 'http://localhost:3000/user';
 
   constructor(public http: HttpClient, public matSnackBar: MatSnackBar) {
   }

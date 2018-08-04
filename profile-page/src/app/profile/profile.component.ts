@@ -27,11 +27,11 @@ export class ProfileComponent {
             ...profile,
             latest_posts: profile
               .latest_posts
-              .filter((e, i) => i < 8)
               .sort((p1: Post, p2: Post) => {
                 if (p1.likes === p2.likes) return 0;
                 return p1.likes > p2.likes ? -1 : 1;
               })
+              .filter((e, i) => i < 8)
           }
         }),
         catchError((err) => {
