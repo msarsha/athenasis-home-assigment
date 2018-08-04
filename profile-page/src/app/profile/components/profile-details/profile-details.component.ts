@@ -6,11 +6,11 @@ import {Profile} from '../../models/profile';
   styleUrls: ['./profile-details.component.css'],
   template: `
     <div class="details-container">
-      <img [src]="profile.image" class="avatar">
-      <span class="details-name">{{profile.name}}</span>
-      <span>{{profile.birth | date}}</span>
-      <a href="mailto:{{profile.contact.email}}">{{profile.contact.email}}</a>
-      <span>{{profile.contact.phone}}</span>
+      <img [src]="profile?.image" class="avatar">
+      <span class="details-name">{{profile?.name}}</span>
+      <span>{{profile?.birth | date}}</span>
+      <a href="mailto:{{profile?.contact?.email}}">{{profile?.contact?.email}}</a>
+      <span>{{profile?.contact?.phone}}</span>
     </div>
   `
 })

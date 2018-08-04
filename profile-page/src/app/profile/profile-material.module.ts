@@ -4,7 +4,7 @@ import {
   MatDividerModule,
   MatExpansionModule,
   MatIconModule, MatListModule,
-  MatProgressSpinnerModule, MatTabsModule
+  MatProgressSpinnerModule, MatSnackBarModule, MatTabsModule
 } from '@angular/material';
 
 @NgModule({
@@ -15,7 +15,8 @@ import {
     MatExpansionModule,
     MatIconModule,
     MatTabsModule,
-    MatListModule
+    MatListModule,
+    MatSnackBarModule
   ],
   exports: [
     MatProgressSpinnerModule,
@@ -24,7 +25,8 @@ import {
     MatExpansionModule,
     MatIconModule,
     MatTabsModule,
-    MatListModule
+    MatListModule,
+    MatSnackBarModule
   ]
 })
 export class ProfileMaterialModule {
