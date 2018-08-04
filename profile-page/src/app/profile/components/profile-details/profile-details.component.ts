@@ -7,7 +7,7 @@ import {Profile} from '../../models/profile';
   template: `
     <div class="details-container">
       <img [src]="profile.image" class="avatar">
-      <span class="avatar-name">{{profile.name}}</span>
+      <span class="details-name">{{profile.name}}</span>
       <span>{{profile.birth | date}}</span>
       <a href="mailto:{{profile.contact.email}}">{{profile.contact.email}}</a>
       <span>{{profile.contact.phone}}</span>
