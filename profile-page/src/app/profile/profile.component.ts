@@ -21,11 +21,23 @@ import {Profile} from './models/profile';
               </mat-card-title>
               <mat-card-subtitle>Home for everything related to YOU.</mat-card-subtitle>
               <mat-divider></mat-divider>
-            </mat-card-title>
+            </mat-card-title> 
             <mat-card-content class="profile-card-content">
               <div class="profile-card-content__first-section">
                 <profile-details [profile]="profile" class="profile-avatar"></profile-details>
-                <profile-posts [posts]="profile.latest_posts" class="profile-posts"></profile-posts>
+                <mat-tab-group class="profile-tabs">
+                  <mat-tab label="Posts">
+                    <profile-posts [posts]="profile.latest_posts"></profile-posts>
+                  </mat-tab>
+                  <mat-tab label="Education">
+                    <h1>Some more tab content</h1>
+                    <p>...</p>
+                  </mat-tab>
+                  <mat-tab label="Work">
+                    <h1>Some more tab content</h1>
+                    <p>...</p>
+                  </mat-tab>
+                </mat-tab-group>
               </div>
               <profile-connections [connections]="profile.top_connections"></profile-connections>
             </mat-card-content>

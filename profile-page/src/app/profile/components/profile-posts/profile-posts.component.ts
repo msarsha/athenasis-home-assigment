@@ -5,7 +5,6 @@ import {Post} from '../../models/post';
   selector: 'profile-posts',
   styleUrls: ['./profile-posts.component.css'],
   template: `
-    <h3>Recent Posts:</h3>
     <div class="posts-container">
       <div class="post" *ngFor="let post of posts">
         <div class="post-header">
