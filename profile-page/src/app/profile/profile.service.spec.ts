@@ -22,31 +22,31 @@ describe('ProfileService', () => {
   });
 
   it('should get user profile', function () {
-    const dummyProfile: Profile = {
-      name: 'John Snow',
-      image: 'https://api.adorable.io/avatars/210/johnsnow@adorassble.io.png',
-      birth: new Date(),
-      contact: {
-        email: 'john.snow@gmail.com',
-        phone: '0544432221'
-      },
-      education: ['college', 'university', 'life'],
-      work: ['sela', 'elal'],
-      latest_posts: [
-        {title: 'best post EVVA !!', text: 'slept for 5 hours !', likes: 15}
-      ],
-      top_connections: [
-        {
-          name: 'Aria Stark',
-          image: 'https://api.adorable.io/avatars/220/contact1%40adorable.io',
-          facebook: 'ariastark'
-        }
-      ]
-    };
-
     service.getProfile().subscribe(p => {
       expect(p).toBeTruthy();
       expect(p).toEqual(dummyProfile);
     })
   });
 });
+
+export const dummyProfile: Profile = {
+  name: 'John Snow',
+  image: 'https://api.adorable.io/avatars/210/johnsnow@adorassble.io.png',
+  birth: new Date(),
+  contact: {
+    email: 'john.snow@gmail.com',
+    phone: '0544432221'
+  },
+  education: ['college', 'university', 'life'],
+  work: ['sela', 'elal'],
+  latest_posts: [
+    {title: 'best post EVVA !!', text: 'slept for 5 hours !', likes: 15}
+  ],
+  top_connections: [
+    {
+      name: 'Aria Stark',
+      image: 'https://api.adorable.io/avatars/220/contact1%40adorable.io',
+      facebook: 'ariastark'
+    }
+  ]
+};
