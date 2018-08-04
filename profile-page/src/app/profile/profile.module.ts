@@ -5,6 +5,7 @@ import {ProfileComponent} from './profile.component';
 import {ProfileDetailsComponent} from './components/profile-details/profile-details.component';
 import {ProfilePostsComponent} from './components/profile-posts/profile-posts.component';
 import {ProfileConnectionsComponent} from './components/profile-connections/profile-connections';
+import {ProfileItemListComponent} from './components/profile-item-list/profile-item-list.component';
 
 @NgModule({
   imports: [
@@ -18,9 +19,9 @@ import {ProfileConnectionsComponent} from './components/profile-connections/prof
     ProfileComponent,
     ProfileDetailsComponent,
     ProfilePostsComponent,
-    ProfileConnectionsComponent
-  ],
-  providers: [],
+    ProfileConnectionsComponent,
+    ProfileItemListComponent
+  ]
 })
 export class ProfileModule {
 

@@ -11,9 +11,7 @@ import {Post} from '../../models/post';
           <span class="post-header__text">{{post.title}}</span>
           <span class="post-header__likes" title="likes">{{post.likes}}</span>
         </div>
-        <div class="post-content">
-          <span>{{post.text}}</span>
-        </div>
+        <span>{{post.text}}</span>
       </div>
     </div>
   `

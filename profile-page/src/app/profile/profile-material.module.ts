@@ -3,7 +3,7 @@ import {
   MatCardModule,
   MatDividerModule,
   MatExpansionModule,
-  MatIconModule,
+  MatIconModule, MatListModule,
   MatProgressSpinnerModule, MatTabsModule
 } from '@angular/material';
 
@@ -14,7 +14,8 @@ import {
     MatDividerModule,
     MatExpansionModule,
     MatIconModule,
-    MatTabsModule
+    MatTabsModule,
+    MatListModule
   ],
   exports: [
     MatProgressSpinnerModule,
@@ -22,7 +23,8 @@ import {
     MatDividerModule,
     MatExpansionModule,
     MatIconModule,
-    MatTabsModule
+    MatTabsModule,
+    MatListModule
   ]
 })
 export class ProfileMaterialModule {
